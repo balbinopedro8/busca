@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "Busca Fácil",
+    "version": "1.0",
+    "description": "Realize pesquisas diretamente do navegador com uma interface amigável e opções avançadas.",
+    "icons": {
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "assets/icons/icon-48.png"
+    },
+    "permissions": [
+      "storage",
+      "history"
+    ],
+    "background": {
+      "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/popup.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["css/styles.css"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Busca Fácil</title>
+</head>
+<body>
+  <div id="popup-container">
+    <!-- Filtros de Busca -->
+    <section id="search-filters">
+      <h2>Filtros de Busca</h2>
+      <label for="search-input">Digite sua pesquisa:</label>
+      <input type="text" id="search-input" placeholder="Digite sua pesquisa...">
+      
+      <label for="search-type">Tipo de Busca:</label>
+      <select id="search-type">
+        <option value="web">Web</option>
+        <option value="images">Imagens</option>
+        <option value="videos">Vídeos</option>
+        <option value="maps">Maps</option>
+        <option value="news">Notícias</option>
+        <option value="shopping">Compras</option>
+      </select>
+    </section>
+
+    <!-- Filtros Adicionais -->
+    <section id="additional-filters">
+      <h2>Filtros Adicionais</h2>
+      
+      <label for="file-type">Formato do Arquivo:</label>
+      <input type="text" id="file-type" placeholder="Tipo de arquivo (ex: PDF)">
+      
+      <div id="price-range">
+        <label>Faixa de Preço:</label>
+        <div class="price-inputs">
+          <input type="number" id="min-price" placeholder="Preço mínimo">
+          <button id="clear-min-price" class="clear-button">Limpar</button>
+        </div>
+        <div class="price-inputs">
+          <input type="number" id="max-price" placeholder="Preço máximo">
+          <button id="clear-max-price" class="clear-button">Limpar</button>
+        </div>
+      </div>
+      
+      <div id="date-range">
+        <label>Intervalo de Datas:</label>
+        <div class="date-inputs">
+          <input type="date" id="start-date" placeholder="Data inicial">
+          <input type="date" id="end-date" placeholder="Data final">
+        </div>
+      </div>
+    </section>
+    
+    <div id="actions">
+      <button id="search-button">Buscar</button>
+      <button id="history-button">Histórico</button>
+    </div>
+  </div>
+  <script src="js/popup.js"></script>
+</body>
+</html>

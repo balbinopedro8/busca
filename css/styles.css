@@ -1,0 +1,107 @@
+/* Estilos para a interface da extensão */
+#popup-container {
+    width: 100%;
+    max-width: 500px; /* Aumenta a largura máxima para 500px */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Cor de fundo clara para melhor contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333; /* Texto escuro para bom contraste */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  #search-type, #file-type {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  #price-range, #date-range {
+    margin-bottom: 10px;
+  }
+  
+  .price-inputs, .date-inputs {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 10px; /* Espaçamento entre os campos */
+  }
+  
+  .price-inputs input, .date-inputs input {
+    flex: 1;
+    min-width: 45%; /* Garante que os inputs não fiquem muito pequenos */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .clear-button {
+    padding: 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  #search-button, #history-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #search-button {
+    background-color: #4CAF50;
+  }
+  
+  #history-button {
+    background-color: #2196F3;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; /* Remove a seta de incremento/ decremento em Firefox */
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove a seta de incremento/ decremento em Webkit */
+    margin: 0;
+  }
+  
